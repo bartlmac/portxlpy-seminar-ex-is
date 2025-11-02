@@ -24,9 +24,13 @@ Arbeite **strikt schrittweise**: Erfülle jeden Task, warte auf mein **„✅“
 
 ### Allgemeine Regeln  
 - **Sprache:** Deutsch in Doku, Variablennamen englisch (`present_value`).  
-- **Qualität:** Black‑Format, Ruff‑Lint = 0 Warnungen.  
-- **Antwortformat:** Jeder Task liefert **genau einen** ausführbaren Code‑Block pro Datei.  
+- **Qualität:**
+  * pytest = grün
+  * Für Human-In-The-Loop bei den Tests immer "Print" vorsehen, damit `pytest -s` Ausgaben zeigt
+  * Black‑Format, Ruff‑Lint = 0 Warnungen.  
+- **Antwortformat:** Jede Aufgabe liefert **einen einzigen ausführbaren Python-Codeblock pro Datei** (d. h. z. B. ein Skript und ein Test - zwei Codeblöcke)
 - **Fortschritt:** Warte jeweils auf mein **✅**.
+- **Kein Fließtext, keine Erklärungen, keine Diskussion**.
 
 
 ---
