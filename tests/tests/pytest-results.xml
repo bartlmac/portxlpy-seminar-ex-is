@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="0.285" timestamp="2025-11-02T21:29:35.241097" hostname="DESKTOP-GCAF0SF"><testcase classname="" name="tests.test_bxt" time="0.000"><error message="collection failure">ImportError while importing test module 'C:\dev\git\portxlpy-seminar-ex-is\tests\test_bxt.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Program Files\Python312\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+test_bxt.py:6: in &lt;module&gt;
+    from ausfunct import Bxt
+E   ModuleNotFoundError: No module named 'ausfunct'</error></testcase></testsuite></testsuites>

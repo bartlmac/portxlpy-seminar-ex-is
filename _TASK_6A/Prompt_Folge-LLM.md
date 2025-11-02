@@ -13,8 +13,7 @@ Folgende Dateien und Daten liegen vollständig vor und bilden den aktuellen Proj
 
 ### 🧩 **Input für das LLM (Kontextquellen)**
 
-Diese Dateien dienen ausschließlich als **Inhalts- und Wissensbasis** für die Ableitung der Python-Logik aus der Excel-Struktur.
-Der Python-Code selbst soll sie **nicht direkt referenzieren**, aber das LLM darf sie verwenden, um Formeln, Abhängigkeiten und Berechnungswege zu verstehen.
+Diese Dateien dienen ausschließlich als **Inhalts- und Wissensbasis** für die Ableitung der Python-Logik aus der Excel-Struktur. Diese Dateien werden nach der Erstellung des Python-Rechners GELÖSCHT und der Python-Code selbst darf sie deshalb **nicht direkt referenzieren**, aber das LLM darf sie verwenden, um Formeln, Abhängigkeiten und Berechnungswege zu verstehen. 
 
 ```
 protokoll.txt   – Vollständiger Projektverlauf bis unmittelbar vor TASK 6A (inkl. Entscheidungen & Code)

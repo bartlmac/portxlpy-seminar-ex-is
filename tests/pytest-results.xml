@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="4.015" timestamp="2025-11-02T21:32:00.267112" hostname="DESKTOP-GCAF0SF"><testcase classname="tests.test_bxt" name="test_bxt_reference_case" time="0.111"><system-out>--------------------------------- Captured Out ---------------------------------
+
+</system-out></testcase></testsuite></testsuites>
