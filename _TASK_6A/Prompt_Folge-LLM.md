@@ -52,7 +52,7 @@ tafeln.csv    – Sterbetafel (Long-Format, Spalten Name|Wert)
 * Sprache: Python 3.11+
 * Qualitätsanforderung:
   * pytest = grün
-* Jede Aufgabe liefert **einen einzigen ausführbaren Python-Codeblock**
+* Jede Aufgabe liefert **einen einzigen ausführbaren Python-Codeblock pro Datei** (d. h. z. B. ein Skript und ein Test - zwei Codeblöcke)
 * Kein Fließtext, keine Erklärungen, keine Diskussion
 
 ## Vorgehen
