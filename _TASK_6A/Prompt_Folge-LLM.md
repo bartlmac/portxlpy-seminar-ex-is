@@ -7,7 +7,7 @@
 
 ## Aktueller Zustand / Verfügbare Artefakte
 
-Du arbeitest komplett im unterverzeichnis "Bartek" des Repo-Roots.
+Du arbeitest komplett im Repo-Root.
 
 Folgende Dateien und Daten liegen vollständig vor und bilden den aktuellen Projektstand, sie werden in drei Schritten hochgeladen, danach, im vierten Schritt, bekommst du das Prompt mit der eigenlichen Aufgabe:
 

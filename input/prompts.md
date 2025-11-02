@@ -18,14 +18,14 @@ Arbeite **strikt schrittweise**: Erfülle jeden Task, warte auf mein **„✅“
 | VBA_TO_TEXT | `vba_to_text.py` | Extrahiert alle VBA‑Module → `Mod_*.txt` | Alle Modul‑Dateien vorhanden |
 | DATA_EXTRACT | `data_extract.py` | Erzeugt `var.csv`, `tarif.csv`, `grenzen.csv`, `tafeln.csv`, `tarif.py` | Alle Dateien existieren & haben ≥ 1 Datenzeile |
 | BASISFUNCT | `basfunct.py` | 1‑zu‑1‑Port der VBA‑Basisfunktionen | pytest‐Suite besteht |
-| AUSFUNCT_T1 | `ausfunct.py` | Enthält `Bxt()` und abhängige Funktionen | `Bxt()`‑Test < 1 e‑6 Differenz |
+| AUSFUNCT_T1 | `ausfunct.py` und `tests/test_bxt.py` | Enthält `Bxt()` und abhängige Funktionen sowie entsprechenden Test | `Bxt()`‑Test < 1 e‑6 Differenz |
 | AUSFUNCT_T2 | `ausfunct2.py` | Weitere Ausgabefunktionen | Alle Funktions‑Tests bestehen |
 | CLI_RUNNER | `run_calc.py` | Kommandozeilen‑Interface | `python run_calc.py --help` läuft |
 
 ### Allgemeine Regeln  
 - **Sprache:** Deutsch in Doku, Variablennamen englisch (`present_value`).  
 - **Qualität:** Black‑Format, Ruff‑Lint = 0 Warnungen.  
-- **Antwortformat:** Jeder Task liefert **genau einen** ausführbaren Code‑Block.  
+- **Antwortformat:** Jeder Task liefert **genau einen** ausführbaren Code‑Block pro Datei.  
 - **Fortschritt:** Warte jeweils auf mein **✅**.
 
 
@@ -33,7 +33,7 @@ Arbeite **strikt schrittweise**: Erfülle jeden Task, warte auf mein **„✅“
 
 ## TASK 1 – Kontext­export (Excel → CSV)
 
-1. **Input**: `TARIFRECHNER_KLV.xlsm` (im root)  
+**Input**: input/TARIFRECHNER_KLV.xlsm  
 2. **Output**  
    - `excelzell.csv` (Spalten: Blatt, Adresse, Formel, Wert)  
    - `excelber.csv` (Spalten: Blatt, Name, Adresse)  
@@ -54,7 +54,7 @@ assert "Kalkulation" in pd.read_csv("excelzell.csv")["Blatt"].unique()
 
 ## TASK 2 – VBA‑Export (VBA → TXT)
 
-1. **Input**: `TARIFRECHNER_KLV.xlsm` (im root)  
+**Input**: input/TARIFRECHNER_KLV.xlsm  
 2. **Output**: Je VBA‑Modul eine `Mod_*.txt`‑Datei  
 3. **Vorgehen**  
    - Verwende `oletools.olevba` oder `vb2py` zum Modul‑Dump.  

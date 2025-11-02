@@ -11,26 +11,25 @@ Du:
 
 ### Rolle und Ziel  
 Du bist ein **Senior‑Python‑Engineer**.  
-Ziel: Aus der Excel‑Datei TARIFRECHNER_KLV.xlsm einen **modularen, reinen‑Python‑Produkt­rechner** zu erzeugen, der identische Ergebnisse liefert.  
-Alle Dateien, insb. auch das Excel, befinden sich im Projekt-Root. Plattform: Windows.  Terminal: VS Code Bash.  
+Ziel: Aus der Excel‑Datei `TARIFRECHNER_KLV.xlsm` einen **modularen, reinen‑Python‑Produkt­rechner** zu erzeugen, der identische Ergebnisse liefert.  
 Die Lösung besteht aus **sieben Scripts** und mehreren **.csv‑Eingabedateien** (siehe Tabelle unten).  
-Ich gebe dir gleich mehrere Tasks. Arbeite **strikt schrittweise**: Erfülle jeden Task, warte auf mein **„✅“**, erst dann fahre fort.
+Arbeite **strikt schrittweise**: Erfülle jeden Task, warte auf mein **„✅“**, erst dann fahre fort.
 
 ### Deliverables
 | Kürzel | Datei | Inhalt | Prüfkriterium |
 |--------|-------|--------|---------------|
-| EXCEL_TO_TEXT | excel_to_text.py | Extrahiert Zellen & Bereiche → excelzell.csv, excelber.csv | Beide CSVs existieren & haben ≥ 1 Zeile |
-| VBA_TO_TEXT | vba_to_text.py | Extrahiert alle VBA‑Module → Mod_*.txt | Alle Modul‑Dateien vorhanden |
-| DATA_EXTRACT | data_extract.py | Erzeugt var.csv, tarif.csv, grenzen.csv, tafeln.csv, tarif.py | Alle Dateien existieren & haben ≥ 1 Datenzeile |
-| BASISFUNCT | basfunct.py | 1‑zu‑1‑Port der VBA‑Basisfunktionen | pytest‐Suite besteht |
-| AUSFUNCT_T1 | ausfunct.py | Enthält Bxt() und abhängige Funktionen | Bxt()‑Test < 1 e‑6 Differenz |
-| AUSFUNCT_T2 | ausfunct2.py | Weitere Ausgabefunktionen | Alle Funktions‑Tests bestehen |
-| CLI_RUNNER | run_calc.py | Kommandozeilen‑Interface | python run_calc.py --help läuft |
+| EXCEL_TO_TEXT | `excel_to_text.py` | Extrahiert Zellen & Bereiche → `excelzell.csv`, `excelber.csv` | Beide CSVs existieren & haben ≥ 1 Zeile |
+| VBA_TO_TEXT | `vba_to_text.py` | Extrahiert alle VBA‑Module → `Mod_*.txt` | Alle Modul‑Dateien vorhanden |
+| DATA_EXTRACT | `data_extract.py` | Erzeugt `var.csv`, `tarif.csv`, `grenzen.csv`, `tafeln.csv`, `tarif.py` | Alle Dateien existieren & haben ≥ 1 Datenzeile |
+| BASISFUNCT | `basfunct.py` | 1‑zu‑1‑Port der VBA‑Basisfunktionen | pytest‐Suite besteht |
+| AUSFUNCT_T1 | `ausfunct.py` und `tests/test_bxt.py` | Enthält `Bxt()` und abhängige Funktionen sowie entsprechenden Test | `Bxt()`‑Test < 1 e‑6 Differenz |
+| AUSFUNCT_T2 | `ausfunct2.py` | Weitere Ausgabefunktionen | Alle Funktions‑Tests bestehen |
+| CLI_RUNNER | `run_calc.py` | Kommandozeilen‑Interface | `python run_calc.py --help` läuft |
 
 ### Allgemeine Regeln  
-- **Sprache:** Deutsch in Doku, Variablennamen englisch (present_value).  
-- **Qualität:** Black‑Format, Ruff‑Lint = 0 Warnungen.  
-- **Antwortformat:** Jeder Task liefert **genau einen** ausführbaren Code‑Block.  
+- **Sprache:** Deutsch in Doku, Variablennamen englisch (`present_value`).  
+- **Qualität:** Black‑Format, Ruff‑Lint = 0 Warnungen.  
+- **Antwortformat:** Jeder Task liefert **genau einen** ausführbaren Code‑Block pro Datei.  
 - **Fortschritt:** Warte jeweils auf mein **✅**.
 ChatGPT:
 Klingt gut — ich bin bereit.
