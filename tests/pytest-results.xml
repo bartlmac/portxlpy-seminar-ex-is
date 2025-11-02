@@ -1,3 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="1.220" timestamp="2025-11-02T21:36:10.796254" hostname="DESKTOP-GCAF0SF"><testcase classname="tests.test_bxt" name="test_bxt_reference_case" time="0.018"><system-out>--------------------------------- Captured Out ---------------------------------
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="1.587" timestamp="2025-11-02T21:48:55.735494" hostname="DESKTOP-GCAF0SF"><testcase classname="tests.test_bxt" name="test_bxt_reference_case" time="0.014"><system-out>--------------------------------- Captured Out ---------------------------------
 
 </system-out></testcase></testsuite></testsuites>
